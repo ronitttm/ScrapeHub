@@ -29,7 +29,7 @@ def search_news():
             
             titlesnew = titles[34:45]
             linksnew = links[34:45]
-            print(titlesnew)
+            #print(titlesnew)
             
             i = 0
             while i < 11:

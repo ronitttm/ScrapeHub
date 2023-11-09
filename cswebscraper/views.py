@@ -16,6 +16,7 @@ def search_news(request):
     search_url = f"https://thehackernews.com/search/label/{keyword}"
     
     try:
+        Article.objects.all().delete()
         response = requests.get(search_url)
         html_content = response.text
         soup = BeautifulSoup(html_content, 'html.parser')
